@@ -1,0 +1,49 @@
+﻿
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top flex-column" >
+    <div class="d-flex">
+        <a id="brandlogo" class="navbar-brand d-inline-block" style="font-family: 'Philosopher', sans-serif;" asp-action="Index" asp-controller="Home">
+            CALVARY ROAD BAPTIST CHURCH
+            <samp>
+                <br />
+                <small style="font-family:'Microsoft PhagsPa'">
+                    A Classical Baptist Church
+                </small>
+            </samp>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="#" id="navLinks">About Us |</a></li>
+            <li class="nav-item"><a class="nav-link" asp-action="SermonsIndex" asp-controller="Sermons" id="navLinks">Sermons |</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="navLinks">Events & Ministries |</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="navLinks">Missionaries |</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="navLinks">Tithes & Donations |</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRBC Library |</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Outlines</a>
+                    <a class="dropdown-item" href="#">Sermon & Manuscripts</a>
+                    <a class="dropdown-item" href="#">Pastors Blog</a>
+                    <a class="dropdown-item" href='http://classicalbaptist.press' target='_blank'>Classical Baptist  Press</a>
+                    <a class="dropdown-item" href='http://arsbk.com' target="_blank">Arabic Reference Study Bible</a>
+                    <a class="dropdown-item" href="#">Tracts</a>
+                    <a class="dropdown-item" href="#">The Resurrection of Jesus Christ</a>
+                    <a class="dropdown-item" href="#">A Pilgrims Progress</a>
+                    <a class="dropdown-item" href="#">Bible Reading Calendar</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" asp-action="NewsIndex" asp-controller="News" id="navLinks">Calvary Road Baptist Academy |</a></li>
+            <li class="nav-item"><a class="nav-link" asp-action="ContactIndex" asp-controller="Contact" id="navLinks">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+@*<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+    </ul>
+</div>*@

@@ -1,0 +1,43 @@
+﻿@model CRBC.Model.PageContent
+<partial name="_Header" action="@Model" />
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Title</th>
+                <th scope="col">Excerpt</th>
+                <th scope="col">Text</th>
+                <th scope="col">
+                    <img src="~/images/yt_logo_rgb_light.png"
+                         alt="YouTube Logo"
+                         style="width: auto; height: 20px" />
+                </th>
+                <th scope="col">Sermon</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@DateTime.Now.ToString("MM/dd/yyyy") </td>
+                <td>Christ's Warning</td>
+                <td>Column content</td>
+                <td>Luke 22.31</td>
+                <td><iframe width="250" 
+                            src="https://www.youtube.com/embed/nxSgD5uo40o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                <td>
+                    Sometimes, just when you think things are going so well for you, all Hell breaks loose.
+
+                    Such was the case with a man named Job, the married father of ten who enjoyed great wealth and intense devotion to God...
+                </td>
+            </tr>
+            <tr>
+                <th>@DateTime.Now.ToString("MM/dd/yyyy")</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calvary Road Baptist Church is a friendly church in the San Gabriel Valley. Thinking about visiting? Visit our website for more information" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    @Html.Partial("_NavBar")
+    <div class="container">
+        <main role="main" class="pb-3">
+            <div style="margin-top: 30px; margin-bottom:75px;">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+    @Html.Partial("_Footer")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

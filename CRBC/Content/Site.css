@@ -1,0 +1,66 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*NavBar*/
+.navbar-brand {
+    text-wrap: normal;
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+}
+
+.carousel-item {
+    height: 32rem;
+    color: white;
+    position: relative;
+}
+
+.carouselContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.carouselDiv {
+    box-shadow: 6px 6px 5px grey;
+}
+
+
+/*Footer*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
